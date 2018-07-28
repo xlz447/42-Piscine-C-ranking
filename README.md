@@ -28,3 +28,5 @@
 &nbsp; out of or in connection with reading the contents of the document.... blah blah blah, yeah you all know  
 &nbsp; what we want to say. Anyways, enjoy!!!  
 +---------------------------------------------------------------------------------------------------------+  
+
+By opening the ranking files, you are agreeing to NOT SUE US IF YOU CRY/SAD/DEPRESSED OR ANYTHING BAD HAPPEND TO YOU after you know your ranking in the piscine.
