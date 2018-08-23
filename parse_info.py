@@ -1,9 +1,11 @@
 import json
 import csv
 
+FILE_NAME_TO_OPEN = 'aug2018info'
+FILE_NAME_TO_SAVE = 'aug2018result.txt'
 
 ## read file
-with open("julyinfo") as f:
+with open(FILE_NAME_TO_OPEN) as f:
 	inter = f.read()
 
 inter = "[" + inter + "{}]"
@@ -33,7 +35,7 @@ def lv_cmp(e):
 all_data.sort(reverse = True, key = lv_cmp)
 
 rank = 1
-with open("july2018results.txt", "w") as output:
+with open(FILE_NAME_TO_SAVE, "w") as output:
 	for ppl in all_data:
 		output.write(str(rank) + " ")
 		if ppl[2]:

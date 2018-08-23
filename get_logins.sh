@@ -1,2 +1,1 @@
-cat final_results.txt |  grep "2017/10" | sed 's/  .*//' | sed 's/.* //' | sort -u > oct2017.csv
-
+cat allresult.txt |  grep "2018/8" | sed 's/  .*//' | sed 's/.* //' | sort -u > aug2018.csv
