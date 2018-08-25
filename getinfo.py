@@ -7,7 +7,7 @@ import os
 FILE_NAME_TO_OPEN = 'aug2018.csv'
 FILE_NAME_TO_SAVE = 'aug2018info'
 
-r = requests.post("https://api.intra.42.fr/oauth/token", data={'grant_type': 'client_credentials', 'client_id': "YOUR UID", 'client_secret': "YOUR SECRET"})
+r = requests.post("https://api.intra.42.fr/oauth/token", data={'grant_type': 'client_credentials', 'client_id': "", 'client_secret': ""})
 access_token = json.loads(r.text)['access_token']
 print(access_token)
 
