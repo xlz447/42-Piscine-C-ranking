@@ -3,7 +3,7 @@ import json
 import csv
 import re
 
-r = requests.post("https://api.intra.42.fr/oauth/token", data={'grant_type': 'client_credentials', 'client_id': "", 'client_secret': ""})
+r = requests.post("https://api.intra.42.fr/oauth/token", data={'grant_type': 'client_credentials', 'client_id': "46694a0ace8f3f7d18852ecae27fdadf94af9e00a771cb871a89ee8e1bf2b10e", 'client_secret': "75328dd86cd2b0453e93e56456ad36fb682626eadba8e9a1663c27a9b0cf208f"})
 access_token = json.loads(r.text)['access_token']
 print(access_token)
 
