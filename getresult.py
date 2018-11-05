@@ -1,8 +1,8 @@
 import json
 import csv
 
-FILE_NAME_TO_OPEN = 'aug2018info'
-FILE_NAME_TO_SAVE = 'aug2018result.txt'
+FILE_NAME_TO_OPEN = 'oct2018info'
+FILE_NAME_TO_SAVE = 'oct2018result.txt'
 
 ## read file
 with open(FILE_NAME_TO_OPEN) as f:
