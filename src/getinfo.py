@@ -4,10 +4,10 @@ import csv
 import urllib
 import os
 
-FILE_NAME_TO_OPEN = 'oct2018.csv'
-FILE_NAME_TO_SAVE = 'oct2018info'
+FILE_NAME_TO_OPEN = '../csvfiles/newurls.csv'
+FILE_NAME_TO_SAVE = '../infofiles/info'
 
-r = requests.post("https://api.intra.42.fr/oauth/token", data={'grant_type': 'client_credentials', 'client_id': "xxx", 'client_secret': "xxx"})
+r = requests.post("https://api.intra.42.fr/oauth/token", data={'grant_type': 'client_credentials', 'client_id': "", 'client_secret': ""})
 access_token = json.loads(r.text)['access_token']
 print(access_token)
 
@@ -32,7 +32,7 @@ if "DONE" in str(temp).upper():
 		if text.lower() == "yes" or text.lower() == "y":
 			print("ok fine")
 			temp = 0
-			if os.path.exists(FILE_NAME_TO_SAVE):
+			if os.path.exists(FILE_NAME_TO_SAVE) and FILE_NAME_TO_SAVE != '../infofiles/info':
 				os.remove(FILE_NAME_TO_SAVE)
 			break
 		elif text.lower() == "no" or text.lower() == "n":
